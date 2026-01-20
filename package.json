@@ -1,0 +1,16 @@
+{
+  "name": "gdrive-mcp-server-http",
+  "version": "0.1.0",
+  "description": "Streamable HTTP wrapper for Google Drive MCP server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.21.1",
+    "cors": "~2.8.5",
+    "express": "^4.21.2",
+    "googleapis": "^120.0.0",
+    "sql.js": "^1.13.0"
+  }
+}
