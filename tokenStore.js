@@ -64,6 +64,13 @@ function saveTokensForSession(sessionId, tokens, acctKey = null) {
     try { fs.writeFileSync(bindingPath(sid), JSON.stringify({ account: acctKey.toLowerCase() }, null, 2), 'utf8'); } catch (e) { /* ignore */ }
   }
 }
+// Remove per-session token + binding; keep stable account tokens
+function deleteSession(sessionId) {
+  if (!sessionId) return;
+  const sid = sanitizeId(sessionId);
+  try { fs.unlinkSync(sessionPath(sid)); } catch (e) { /* ignore */ }
+  try { fs.unlinkSync(bindingPath(sid)); } catch (e) { /* ignore */ }
+}
 
-module.exports = { loadTokens, saveTokensForSession, listStableAccounts, readStableFor, getBoundAccountForSession };
+module.exports = { loadTokens, saveTokensForSession, listStableAccounts, readStableFor, getBoundAccountForSession, deleteSession };
 
