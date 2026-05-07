@@ -1,2 +1,4 @@
 tokens/
 tokens.db
+audit.log
+server.log

@@ -1,0 +1,21 @@
+{
+  "email": "rubutog1@udayton.edu",
+  "keys": [
+    {
+      "hash": "f9f2abc0779d49658ad44e1a6d15a3eba4a3697330f19e2c14573bef9c7445b3",
+      "created_at": "2026-01-29T19:23:52.476Z",
+      "revoked": true
+    },
+    {
+      "hash": "5e93f5e878eea395a89978ffaee38bbce07cf6c137f6e77813593e05a29fc858",
+      "created_at": "2026-02-09T20:14:47.166Z",
+      "revoked": true
+    },
+    {
+      "hash": "cc90e244dd2f7d48e8860e436040c15d5b8665536fa891a7f38093b81d33a779",
+      "created_at": "2026-02-10T20:22:41.510Z",
+      "revoked": false
+    }
+  ],
+  "active_hash": "cc90e244dd2f7d48e8860e436040c15d5b8665536fa891a7f38093b81d33a779"
+}
